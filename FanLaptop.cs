@@ -60,9 +60,10 @@ namespace modul4_103022300121
         public void ActivateTrigger(Trigger trigger)
         {
             Transition transition = GetNextState(currentState, trigger);
-            currentState = transition.NextState;
+            
             if(transition != null)
             {
+                currentState = transition.NextState;
                 Console.WriteLine($"Fan {transition.PrevState} berubah menjadi {transition.NextState}");
             }
             else
