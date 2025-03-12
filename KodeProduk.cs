@@ -19,7 +19,6 @@ namespace modul4_103022300121
             Printer,
             Monitor,
             Smartwatch,
-            Maleer,
             Kamera
         }
 
